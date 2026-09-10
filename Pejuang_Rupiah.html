@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pejuang Rupiah
+    </title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script defer="True" src="js/script.js">
+    </script>
+</head>
+
+<body class="site-body">
+    <header class="site-header">
+        <h1>
+            Pejuang Rupiah
+        </h1>
+        <p>
+            Marketplace Jasa Digital untuk Kebutuhan Bisnis Anda
+        </p>
+        <nav class="main-nav">
+            <a href="#beranda">
+                Beranda
+            </a>
+            <a href="#kategori">
+                Kategori
+            </a>
+            <a href="#layanan">
+                Layanan
+            </a>
+            <a href="#cara-kerja">
+                Cara Kerja
+            </a>
+            <a href="#form-pesanan">
+                Pesan Jasa
+            </a>
+        </nav>
+        <hr />
+    </header>
+    <main class="container">
+        <section class="section-card" id="beranda">
+            <h2>
+                Temukan Jasa Freelance Terbaik untuk Bisnis Anda
+            </h2>
+            <p>
+                <strong>
+                    Pejuang Rupiah
+                </strong>
+                adalah marketplace jasa digital
+                yang menghubungkan pelanggan dengan freelancer dari berbagai
+                bidang keahlian.
+            </p>
+            <p>
+                Mulai dari
+                <strong>
+                    desain grafis
+                </strong>
+                ,
+                <strong>
+                    pemrograman
+                </strong>
+                ,
+                <strong>
+                    penulisan
+                </strong>
+                , hingga
+                <strong>
+                    digital marketing
+                </strong>
+                .
+            </p>
+            <img alt="Tim freelancer sedang bekerja bersama" src="img/branda1.jpg" width="400" />
+            <br />
+            <br />
+        </section>
+        <hr />
+        <section class="section-card" id="kategori">
+            <h2>
+                Jasa Populer
+            </h2>
+            <div class="category-grid">
+                <button class="category-item" type="button" data-category="graphics">
+                    <span>🎨</span>
+                    <strong>Graphics &amp; Design</strong>
+                    <small>Lihat jasa desain</small>
+                </button>
+                <button class="category-item" type="button" data-category="programming">
+                    <span>💻</span>
+                    <strong>Programming &amp; Tech</strong>
+                    <small>Lihat jasa teknologi</small>
+                </button>
+                <button class="category-item" type="button" data-category="marketing">
+                    <span>📈</span>
+                    <strong>Digital Marketing</strong>
+                    <small>Lihat jasa marketing</small>
+                </button>
+                <button class="category-item" type="button" data-category="writing">
+                    <span>✍️</span>
+                    <strong>Writing &amp; Translation</strong>
+                    <small>Lihat jasa penulisan</small>
+                </button>
+                <button class="category-item" type="button" data-category="video">
+                    <span>🎬</span>
+                    <strong>Video &amp; Animation</strong>
+                    <small>Lihat jasa video</small>
+                </button>
+                <button class="category-item" type="button" data-category="ai">
+                    <span>🤖</span>
+                    <strong>AI Services</strong>
+                    <small>Lihat jasa AI</small>
+                </button>
+                <button class="category-item category-all" type="button" data-category="all">
+                    <span>🛍️</span>
+                    <strong>Semua Jasa</strong>
+                    <small>Lihat semua layanan</small>
+                </button>
+            </div>
+        </section>
+        <hr />
+        <section class="section-card" id="layanan">
+            <div class="services-heading">
+                <div>
+                    <h2>Layanan Populer</h2>
+                    <p id="serviceFilterText">Menampilkan semua jasa dari berbagai kategori.</p>
+                </div>
+                <button class="btn btn-secondary show-all-btn" id="showAllServices" type="button">Tampilkan
+                    Semua</button>
+            </div>
+            <div class="services-grid" id="servicesGrid">
+                <article class="service-card" data-category="graphics">
+                    <span class="service-badge">🎨 Graphics & Design</span>
+                    <h3>Professional Logo Design</h3>
+                    <img alt="Contoh jasa desain logo" src="img/logo.jpg" width="300" />
+                    <p>Jasa pembuatan logo profesional untuk membangun identitas bisnis Anda.</p>
+                    <p><strong>Freelancer:</strong> CreativeStudio</p>
+                    <p><strong>Rating:</strong> ⭐ 4.9 / 5</p>
+                    <p><strong>Harga mulai:</strong> $20</p>
+                    <p><button class="btn btn-primary" type="button">Pesan Sekarang</button></p>
+                </article>
+                <article class="service-card" data-category="programming">
+                    <span class="service-badge">💻 Programming & Tech</span>
+                    <h3>Website Development</h3>
+                    <img alt="Contoh jasa pembuatan website" src="img/website.jpg" width="300" />
+                    <p>Jasa pembuatan website modern, responsif, dan sesuai kebutuhan bisnis.</p>
+                    <p><strong>Freelancer:</strong> WebDeveloperPro</p>
+                    <p><strong>Rating:</strong> ⭐ 4.8 / 5</p>
+                    <p><strong>Harga mulai:</strong> $50</p>
+                    <p><button class="btn btn-primary" type="button">Pesan Sekarang</button></p>
+                </article>
+                <article class="service-card" data-category="marketing">
+                    <span class="service-badge">📈 Digital Marketing</span>
+                    <h3>Social Media Marketing</h3>
+                    <img alt="Contoh jasa digital marketing" src="img/beranda.jpg" width="300" />
+                    <p>Strategi konten dan pemasaran media sosial untuk meningkatkan jangkauan bisnis.</p>
+                    <p><strong>Freelancer:</strong> GrowthExpert</p>
+                    <p><strong>Rating:</strong> ⭐ 4.9 / 5</p>
+                    <p><strong>Harga mulai:</strong> $25</p>
+                    <p><button class="btn btn-primary" type="button">Pesan Sekarang</button></p>
+                </article>
+                <article class="service-card" data-category="writing">
+                    <span class="service-badge">✍️ Writing & Translation</span>
+                    <h3>Article & Copywriting</h3>
+                    <img alt="Contoh jasa penulisan dan copywriting" src="img/branda1.jpg" width="300" />
+                    <p>Penulisan artikel, caption, dan copywriting yang menarik untuk kebutuhan bisnis.</p>
+                    <p><strong>Freelancer:</strong> WordCraft</p>
+                    <p><strong>Rating:</strong> ⭐ 4.8 / 5</p>
+                    <p><strong>Harga mulai:</strong> $15</p>
+                    <p><button class="btn btn-primary" type="button">Pesan Sekarang</button></p>
+                </article>
+                <article class="service-card" data-category="video">
+                    <span class="service-badge">🎬 Video & Animation</span>
+                    <h3>Video Editing</h3>
+                    <img alt="Contoh jasa video editing" src="img/video.jpg" width="300" />
+                    <p>Jasa editing video untuk media sosial, promosi bisnis, dan konten digital.</p>
+                    <p><strong>Freelancer:</strong> VideoMaster</p>
+                    <p><strong>Rating:</strong> ⭐ 5.0 / 5</p>
+                    <p><strong>Harga mulai:</strong> $30</p>
+                    <p><button class="btn btn-primary" type="button">Pesan Sekarang</button></p>
+                </article>
+                <article class="service-card" data-category="ai">
+                    <span class="service-badge">🤖 AI Services</span>
+                    <h3>AI Content & Prompt</h3>
+                    <img alt="Contoh jasa AI services" src="img/website.jpg" width="300" />
+                    <p>Pembuatan prompt AI, ide konten, dan solusi berbasis AI untuk membantu produktivitas bisnis.</p>
+                    <p><strong>Freelancer:</strong> AICreator</p>
+                    <p><strong>Rating:</strong> ⭐ 4.9 / 5</p>
+                    <p><strong>Harga mulai:</strong> $20</p>
+                    <p><button class="btn btn-primary" type="button">Pesan Sekarang</button></p>
+                </article>
+            </div>
+        </section>
+        <hr />
+        <hr />
+        <section class="section-card" id="cara-kerja">
+            <h2>
+                Cara Pejuang Rupiah Membantu Pelanggan
+            </h2>
+            <ol class="steps">
+                <li>
+                    <strong>
+                        Cari Jasa
+                    </strong>
+                    <br />
+                    Pelanggan mencari jasa sesuai kebutuhan.
+                </li>
+                <li>
+                    <strong>
+                        Pilih Freelancer
+                    </strong>
+                    <br />
+                    Pelanggan membandingkan harga, kemampuan, dan rating.
+                </li>
+                <li>
+                    <strong>
+                        Pesan Jasa
+                    </strong>
+                    <br />
+                    Pelanggan melakukan pemesanan kepada freelancer.
+                </li>
+                <li>
+                    <strong>
+                        Terima Hasil
+                    </strong>
+                    <br />
+                    Freelancer menyelesaikan pekerjaan sesuai pesanan.
+                </li>
+            </ol>
+        </section>
+        <hr />
+        <section class="section-card" id="form-pesanan">
+            <h2>
+                Pemesanan Jasa Custom
+            </h2>
+            <p>
+                Silakan isi formulir berikut untuk mengajukan
+                kebutuhan jasa Anda jika tidak menemukan jasa yang di inginkan.
+            </p>
+            <form action="#" class="order-form" id="orderForm" method="post">
+                <p>
+                    <label for="nama">
+                        Nama Lengkap:
+                    </label>
+                    <br />
+                    <input id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required="" type="text" />
+                </p>
+                <p>
+                    <label for="email">
+                        Email:
+                    </label>
+                    <br />
+                    <input id="email" name="email" placeholder="contoh@email.com" required="" type="email" />
+                </p>
+                <p>
+                    <label for="telepon">
+                        Nomor Telepon
+                    </label>
+                    <br />
+                    <input id="telepon" name="telepon" placeholder="Masukkan nomor telepon" required="" type="tel" />
+                </p>
+                <p>
+                    <label for="layanan">
+                        Pilih Jenis Jasa:
+                    </label>
+                    <br />
+                    <select id="layanan" name="layanan" required="">
+                        <option value="">
+                            -- Pilih Layanan --
+                        </option>
+                        <option value="desain">
+                            Graphics &amp; Design
+                        </option>
+                        <option value="website">
+                            Website Development
+                        </option>
+                        <option value="marketing">
+                            Digital Marketing
+                        </option>
+                        <option value="writing">
+                            Writing &amp; Translation
+                        </option>
+                        <option value="video">
+                            Video Editing
+                        </option>
+                    </select>
+                </p>
+                <p>
+                    <label for="budget">
+                        Budget ($):
+                    </label>
+                    <br />
+                    <input id="budget" min="5" name="budget" placeholder="Contoh: 50" required="" type="number" />
+                </p>
+                <p>
+                    <label for="tanggal">
+                        Batas Waktu Proyek:
+                    </label>
+                    <br />
+                    <input id="tanggal" name="tanggal" required="" type="date" />
+                </p>
+                <p>
+                    <label for="deskripsi">
+                        Deskripsi Proyek:
+                    </label>
+                    <br />
+                    <textarea cols="40" id="deskripsi" name="deskripsi" placeholder="Jelaskan kebutuhan proyek Anda..."
+                        required="" rows="6"></textarea>
+                </p>
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">
+                        Kirim Permintaan
+                    </button>
+                    <button class="btn btn-secondary" type="reset">
+                        Reset Form
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="section-card services-table-section">
+            <h2>
+                Daftar Permintaan Pesanan
+            </h2>
+            <p>
+                Setiap permintaan yang berhasil dikirim dari formulir akan otomatis muncul pada tabel berikut.
+            </p>
+            <!-- Tabel -->
+            <div class="data-table-wrap">
+                <table border="1" class="data-table" id="orderTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                Nama
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Telepon
+                            </th>
+                            <th>
+                                Jenis Jasa
+                            </th>
+                            <th>
+                                Budget
+                            </th>
+                            <th>
+                                Batas Waktu
+                            </th>
+                            <th>
+                                Deskripsi
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="empty-state" colspan="7">
+                                Belum ada permintaan. Silakan isi form di atas.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <hr />
+    <footer class="site-footer">
+        <h2>
+            Pejuang Rupiah
+        </h2>
+        <p>
+            Platform marketplace jasa digital yang menghubungkan
+            pelanggan dengan freelancer.
+        </p>
+        <nav class="footer-nav">
+            <a href="#beranda">
+                Beranda
+            </a>
+            <a href="#kategori">
+                Kategori
+            </a>
+            <a href="#layanan">
+                Layanan
+            </a>
+            <a href="#form-pesanan">
+                Pesan Jasa
+            </a>
+        </nav>
+        <p>
+            © 2026 Pejuang Rupiah. Dibuat untuk keperluan pembelajaran.
+        </p>
+    </footer>
+</body>
+
+</html>
