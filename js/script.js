@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Tampilkan semua jasa saat halaman pertama kali dibuka.
     filterServices("all");
 
+    //menambahkan data ke tabel saat form disubmit
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
